@@ -1,13 +1,13 @@
 {% extends 'layout.html' %}
 
 {% block title %}
-    Saludo
+    {{titulo}}
 {% endblock %}
 
 {% block content %}
     {{ block.super }}
-    <h1 class="title"> Bienvenidos </h1>
-    <h2> Andres Vera </h2>
+    <h1 class="title"> {{titulo}} </h1>
+    <h2> {{nombre_autor}} </h2>
     <h3> ***Python*** </h3>
     {{ block.super }}
 {% endblock %}

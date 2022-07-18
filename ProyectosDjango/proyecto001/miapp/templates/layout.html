@@ -22,9 +22,9 @@
 
     <nav>
         <ul>
-            <li><a href="/inicio"> Inicio </a></li>
-            <li><a href="/saludo"> Mensaje de saludo </a></li>
-            <li><a href="/rango"> Mostrar numeros [a,b] </a></li>
+            <li><a href="{% url 'inicio' %}"> Inicio </a></li>
+            <li><a href="{% url 'saludo' %}"> Mensaje de saludo </a></li>
+            <li><a href="{% url 'rango' %}"> Mostrar numeros [a,b] </a></li>
             <li><a href="/rango2/10/15"> Mostrar numeros [10,15] </a></li>
         </ul>
     </nav>
@@ -47,7 +47,7 @@
 
 
     <footer>
-        UNTELS - Lenguaje de Programación III &COPY; Andres Vera
+        UNTELS - Lenguaje de Programación III &COPY; Andres Vera - {% now "d/m/Y h:m:s " %}
     </footer>
 </body>
 </html>
