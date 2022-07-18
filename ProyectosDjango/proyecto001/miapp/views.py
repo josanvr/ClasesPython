@@ -4,7 +4,7 @@ from django.shortcuts import redirect, render
 # Create your views here.
 def index(request):
     estudiantes = ['Carlos Ruiz','Jordy Quispe','Oscar Reyes','Antony Vasquez']
-    estudiantes = []
+    #estudiantes = []
     return render(request, 'index.html', {
         'titulo':'Inicio',
         'mensaje':'Proyecto Web con Django en LP3',

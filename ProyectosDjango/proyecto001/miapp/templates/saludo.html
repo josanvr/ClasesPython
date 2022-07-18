@@ -8,6 +8,8 @@
     {{ block.super }}
     <h1 class="title"> {{titulo}} </h1>
     <h2> {{nombre_autor}} </h2>
+    {% load filters %}
+    {{"Iniciando curso LP3"|saludo|safe}}
     <h3> ***Python*** </h3>
     {{ block.super }}
 {% endblock %}
